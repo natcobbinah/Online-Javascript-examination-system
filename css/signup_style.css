@@ -1,0 +1,22 @@
+.container{
+    border-radius: 2rem;
+    background-color: rosybrown;
+}
+
+.sign_up input{
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.btn-main{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 15rem;
+    padding-right: 14rem;
+}
+
+.btn-main:hover{
+    color:white;
+}
