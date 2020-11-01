@@ -1,0 +1,26 @@
+body {
+  background-image: url("/assets/editProfile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.container {
+  border-radius: 2rem;
+  background-color: #fefcff;
+}
+
+.editProfile input {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btn-main {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn-main:hover {
+  color: white;
+}

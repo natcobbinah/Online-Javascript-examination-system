@@ -1,0 +1,47 @@
+body {
+  background-image: url("/assets/student_dashboard.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+a {
+  color: black;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.updateqnbank {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.updateqnbank h2 {
+  font-weight: 700;
+}
+
+.viewqueryRecords {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.viewqueryRecords h2 {
+  font-weight: 700;
+}
+
+.btn-main {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn-main:hover {
+  color: white;
+}
