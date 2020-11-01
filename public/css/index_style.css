@@ -1,19 +1,19 @@
-body{
-    background-image: url("/assets/exams_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+body {
+  background-image: url("/assets/exams_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
-a{
-    color: black;
+a {
+  color: black;
 }
 
-.navbar-brand{
-    font-size: 1.5rem;
-    font-weight: 800;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
-.nav-link{
-    font-size: 1.5rem;
-    font-weight: 400;
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
