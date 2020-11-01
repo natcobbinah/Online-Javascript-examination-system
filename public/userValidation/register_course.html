@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Course</title>
+    <link rel="stylesheet" href="/bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootsrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="/bootsrap/jquery-3.5.1.js">
+    <link rel="stylesheet" href="/css/general_style.css">
+    <link rel="stylesheet" href="/css/register_course.css">
+
+</head>
+<body>
+    <div class="container py-5 mt-5">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+                <div class="col-md-6 text-center registerCourse">
+                    <form class="mt-2" action="">
+                        <h2 class="text-center heading">Register Courses</h2>
+                        <div class="form-group mx-2">
+                            <label for="studentnolbl">Student No</label>
+                            <input type="text" id="studentnolbl" name="studentNo"><br>
+                        </div>
+                        <div class="form-group mx-2 my-3">
+                            <label for="selectlbl">Select Courses</label>
+                            <select multiple class="form-control" id="selectlbl">
+                                <option value="soft_eng">Software engineering</option>
+                                <option value="java_web">Java web engineering</option>
+                                <option value="builddply">Build and deployment</option>
+                                <option value="intecom">Intercultural communication</option>
+                                <option value="webeng">Web engineering</option>
+                              </select>
+                        </div>  
+                        <button class="btn btn-main my-2" type="submit">Register Course Modules</button>                 
+                    </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

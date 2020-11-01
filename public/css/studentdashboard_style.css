@@ -18,6 +18,10 @@ a {
   font-weight: 400;
 }
 
+.navbar-nav studentprofile {
+  margin-left: 12rem;
+}
+
 .register {
   border-radius: 2rem;
   background-color: white;
@@ -52,4 +56,14 @@ a {
 
 .viewresults h2 {
   font-weight: 700;
+}
+
+.btn-main {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn-main:hover {
+  color: white;
 }
