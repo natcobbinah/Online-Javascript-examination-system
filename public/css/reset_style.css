@@ -4,9 +4,9 @@ body {
   background-size: 100% auto;
 }
 
-.container {
+.resetpass {
   border-radius: 2rem;
-  background-color: rosybrown;
+  background-color: #fefcff;
 }
 
 .reset-password input {
@@ -19,8 +19,6 @@ body {
   background-color: black;
   color: white;
   font-size: 1.3rem;
-  padding-left: 15rem;
-  padding-right: 16rem;
 }
 
 .btn-main:hover {

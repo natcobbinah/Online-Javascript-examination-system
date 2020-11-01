@@ -4,9 +4,9 @@ body {
   background-size: 100% auto;
 }
 
-.container {
-  border-radius: 2rem;
-  background-color: rosybrown;
+.loginform {
+  border-radius: 1.5rem;
+  background-color: #fefcff;
 }
 
 .login input {
@@ -19,8 +19,6 @@ body {
   background-color: black;
   color: white;
   font-size: 1.3rem;
-  padding-left: 15rem;
-  padding-right: 16rem;
 }
 
 .btn-main:hover {
