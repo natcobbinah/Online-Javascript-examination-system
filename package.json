@@ -24,7 +24,8 @@
   "homepage": "https://github.com/natcobbinah/Online-Javascript-examination-system#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"

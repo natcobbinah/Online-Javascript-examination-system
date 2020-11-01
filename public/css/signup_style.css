@@ -1,3 +1,9 @@
+body {
+  background-image: url("/assets/signup.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 .container {
   border-radius: 2rem;
   background-color: rosybrown;

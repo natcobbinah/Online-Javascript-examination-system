@@ -1,22 +1,28 @@
-.container{
-    border-radius: 2rem;
-    background-color: rosybrown;
+body {
+  background-image: url("/assets/reset.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
-.reset-password input{
-    padding: 1rem;
-    font-size: 1.5rem;
-    width: 100%;
+.container {
+  border-radius: 2rem;
+  background-color: rosybrown;
 }
 
-.btn-main{
-    background-color: black;
-    color: white;
-    font-size: 1.3rem;
-    padding-left: 15rem;
-    padding-right: 16rem;
+.reset-password input {
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
 }
 
-.btn-main:hover{
-    color:white;
+.btn-main {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  padding-left: 15rem;
+  padding-right: 16rem;
+}
+
+.btn-main:hover {
+  color: white;
 }
