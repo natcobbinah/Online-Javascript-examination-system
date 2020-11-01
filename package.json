@@ -1,0 +1,32 @@
+{
+  "name": "web_based_exams_system",
+  "version": "1.0.0",
+  "description": "This is an online javascript exams platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natcobbinah/Online-Javascript-examination-system.git"
+  },
+  "keywords": [
+    "exams",
+    "javascript",
+    "online",
+    "nodejs"
+  ],
+  "author": "Nathaniel Cobbinah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natcobbinah/Online-Javascript-examination-system/issues"
+  },
+  "homepage": "https://github.com/natcobbinah/Online-Javascript-examination-system#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
