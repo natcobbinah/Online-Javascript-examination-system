@@ -1,0 +1,55 @@
+body {
+  background-image: url("/assets/student_dashboard.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+a {
+  color: black;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.register {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.register h2 {
+  font-weight: 700;
+}
+
+.taketest {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.taketest h2 {
+  font-weight: 700;
+}
+
+.availabletest {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.availabletest h2 {
+  font-weight: 700;
+}
+
+.viewresults {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.viewresults h2 {
+  font-weight: 700;
+}
