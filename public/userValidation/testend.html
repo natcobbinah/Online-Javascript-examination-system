@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congrats</title>
+    <link rel="stylesheet" href="/css/taketestlayout.css">
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="username"/>
+            </form>
+            <!-- <a class="btn" href="/game.html">Take test Again</a> -->
+            <a class="btn" href="/userValidation/studentdashboard.html">Finish Test</a>
+            <button type="submit" class="btn" id="saveScoreBtn" onClick="saveHighScore(event)" disabled>Save</button>
+        </div>
+    </div>
+    <script src="/js/testend.js"></script>
+</body>
+</html>

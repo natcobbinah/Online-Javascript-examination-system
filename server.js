@@ -14,6 +14,9 @@ database.loadDatabase();
 const courses_database = new Datastore('courses_database.db');
 courses_database.loadDatabase();
 
+const testscores_database = new Datastore('testscores_database.db');
+testscores_database.loadDatabase();
+
 //retrive users from the database to client end perform comparison to enable login
 app.get('/signup', (request, response) =>{
     console.log("i got a request");
