@@ -3,6 +3,8 @@ const app = express();
 app.listen(3000, () => console.log('listening at 3000'));
 app.use(express.static('public'));
 
+app.use(express.json());
+
 const bcrypt = require('bcrypt');
 const Datastore = require('nedb');
 
@@ -10,19 +12,37 @@ const database = new Datastore('database.db');
 database.loadDatabase();
 
 //Insert user signup data into database
-app.post('/signup',(request,response) =>{
+app.post('/signup',async (request,response) =>{
     console.log("i got a request");
+    console.log(request.body);
 
     const data = request.body;
 
-    database.insert(data);
-    response.json({
-        firstname: data.firstname,
-        lastname : data.lastname,
-        datofbirth : data.datofbirth,
-        email:      data.email,
-        username: data.username,
-        password: data.password,
-    });
+    try{
+        const salt = await bcrypt.genSalt();
+        const hashPassword = await bcrypt.hash(request.body.passwrd,salt);
+    
+        const signupData = {
+            firstname: request.body.fname,
+            lastname : request.body.lname,
+            datofbirth : request.body.doblbl,
+            email:      request.body.emaillbl,
+            username: request.body.uname,
+            password: hashPassword
 
+        };
+
+        database.insert(signupData);
+        response.json({
+            firstname: data.fname,
+            lastname : data.lname,
+            datofbirth : data.doblbl,
+            email:      data.emaillbl,
+            username: data.uname,
+            password: hashPassword,
+        });
+    
+    }catch{
+        response.status(500).send();
+    }
 });

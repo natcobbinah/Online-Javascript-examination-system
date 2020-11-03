@@ -1,11 +1,11 @@
 function  postSignupData(){
-        var firstname  = document.getElementById('#fname').value;
-        var lastname  = document.getElementById('#lname').value;
-        var dob = document.getElementById('#doblbl').value;
-        var email= document.getElementById('#emaillbl').value;
-        var username = document.getElementById('#uname').value;
-        var password = document.getElementById('#passwrd').value;
-        var confpassword = document.getElementById('#confpass').value;
+        var firstname  = document.getElementById('fname').value;
+        var lastname  = document.getElementById('lname').value;
+        var dob = document.getElementById('doblbl').value;
+        var email= document.getElementById('emaillbl').value;
+        var username = document.getElementById('uname').value;
+        var password = document.getElementById('passwrd').value;
+        var confpassword = document.getElementById('confpass').value;
         var isValid = true;
 
       /*   var fnamespan = document.getElementById('#fname_error');
@@ -27,15 +27,14 @@ function  postSignupData(){
         }else{
             isValid = true;
          */
-        var fname  = document.getElementById('#fname').value;
-        var lname  = document.getElementById('#lname').value;
-        var doblbl = document.getElementById('#doblbl').value;
-        var emaillbl= document.getElementById('#emaillbl').value;
-        var uname = document.getElementById('#uname').value;
-        var passwrd = document.getElementById('#passwrd').value;
-        var confpass = document.getElementById('#confpass').value;
+        var fname  = document.getElementById('fname').value;
+        var lname  = document.getElementById('lname').value;
+        var doblbl = document.getElementById('doblbl').value;
+        var emaillbl= document.getElementById('emaillbl').value;
+        var uname = document.getElementById('uname').value;
+        var passwrd = document.getElementById('passwrd').value;
 
-        const data = {fname,lname,doblbl,emaillbl,uname,passwrd,confpass,};
+        const data = {fname,lname,doblbl,emaillbl,uname,passwrd};
         const options = {
              method: 'POST',
              headers: {
@@ -44,10 +43,11 @@ function  postSignupData(){
              body: JSON.stringify(data),      
         }
 
+        alert('Registered Successfully');
+
         fetch('/signup',options).then(response => {
             console.log(response);
         });
     }
 
     document.querySelector('#send_SigupData').addEventListener('click', postSignupData);
-    alert('Registered Successfully');
