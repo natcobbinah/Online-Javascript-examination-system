@@ -50,7 +50,7 @@ app.get('/testSubmit', (request,response) =>{
     console.log("i got a request");
     console.log(request.body);
 
-    database.find({}, (err, data) =>{
+    testscores_database.find({}, (err, data) =>{
         if(err){
             response.end();
             return;
