@@ -1,0 +1,77 @@
+body {
+  background-image: url("/assets/available_test.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.soft-eng h2 {
+  font-weight: 700;
+}
+
+.soft-eng {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.web-eng h2 {
+  font-weight: 700;
+}
+
+.web-eng {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.int-com h2 {
+  font-weight: 700;
+}
+
+.int-com {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.bld-ply h2 {
+  font-weight: 700;
+}
+
+.bld-ply {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.soft-test h2 {
+  font-weight: 700;
+}
+
+.soft-test {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.gen-knldge h2 {
+  font-weight: 700;
+}
+
+.gen-knldge {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.dbases h2 {
+  font-weight: 700;
+}
+
+.dbases {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.sigsys h2 {
+  font-weight: 700;
+}
+
+.sigsys {
+  border-radius: 2rem;
+  background-color: white;
+}

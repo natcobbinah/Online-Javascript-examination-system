@@ -24,3 +24,7 @@ body {
 .btn-main:hover {
   color: white;
 }
+
+span {
+  color: red;
+}
