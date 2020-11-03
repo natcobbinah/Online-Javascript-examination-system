@@ -55,7 +55,6 @@ startGame = () => {
 
 getNewQuestion = () =>{
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
-        localStorage.setItem('mostRecentScore',score);
         //go to the end page
         return window.location.assign("/userValidation/testend.html");
     }
@@ -106,5 +105,6 @@ choices.forEach(choice =>{
 incrementScore = num =>{
     score += num;
     scoreText.innerText = score;
+    sessionStorage.setItem("score",score);
 }
 

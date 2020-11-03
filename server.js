@@ -31,6 +31,19 @@ app.get('/signup', (request, response) =>{
     });
 });
 
+//Insert into testscores database
+app.post('/testSubmit', (request,response) =>{
+    console.log("i got a request");
+    console.log(request.body);
+
+    const data = request.body;
+    testscores_database.insert(data);
+
+    response.json({
+        Testno: data.test,
+        scores  : data.scoresValue
+    });
+});
 
 //Insert user signup data into database
 app.post('/signup',async (request,response) =>{
@@ -48,8 +61,6 @@ app.post('/signup',async (request,response) =>{
             username: data.uname,
             password: hashPassword,
         });
-    
-
 });
 
 //const data = {fname,lname,doblbl,emaillbl,uname};
