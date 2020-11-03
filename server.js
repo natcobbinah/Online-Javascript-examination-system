@@ -11,7 +11,10 @@ const Datastore = require('nedb');
 const database = new Datastore('database.db');
 database.loadDatabase();
 
-//find specific user from database
+const courses_database = new Datastore('courses_database.db');
+courses_database.loadDatabase();
+
+//retrive users from the database to client end perform comparison to enable login
 app.get('/signup', (request, response) =>{
     console.log("i got a request");
     console.log(request.body);
@@ -24,6 +27,7 @@ app.get('/signup', (request, response) =>{
         response.json(data);
     });
 });
+
 
 //Insert user signup data into database
 app.post('/signup',async (request,response) =>{
@@ -42,6 +46,21 @@ app.post('/signup',async (request,response) =>{
             password: hashPassword,
         });
     
+
+});
+
+//Insert student registered course module into database
+app.post('/courses', (request,response) => {
+    console.log("I got a request");
+    console.log(request.body);
+
+    const data = request.body;
+
+    courses_database.insert(data);
+    response.json({
+        StudentNo: data.studentNo,
+        SelectedCourses: data.selectedCourses
+    });
 
 });
 

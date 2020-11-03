@@ -18,6 +18,8 @@ async function getUserCredentialsVerified(){
                    alert('Username and password correct');
                    window.location.href = "/userValidation/studentdashboard.html";
                    break;
+           }else{
+               document.getElementById('status').innerHTML="Incorrect username of password";
            }
         }
 }
@@ -25,6 +27,7 @@ async function getUserCredentialsVerified(){
 if(loginbtn){
     loginbtn.addEventListener('click',getUserCredentialsVerified);
 }
+
 
 //const bcrypt = require('bcryptjs'); not using the decryption
  /* verifying user enterd passwordhash vs one stored in db */

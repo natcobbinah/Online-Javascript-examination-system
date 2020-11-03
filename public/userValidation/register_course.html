@@ -18,26 +18,26 @@
 
             </div>
                 <div class="col-md-6 text-center registerCourse">
-                    <form class="mt-2" action="">
                         <h2 class="text-center heading">Register Courses</h2>
-                        <div class="form-group mx-2">
-                            <label for="studentnolbl">Student No</label>
+                        <div class="input-group mx-2">
+                            <label>Student No</label>
                             <input type="text" id="studentnolbl" name="studentNo"><br>
                         </div>
-                        <div class="form-group mx-2 my-3">
-                            <label for="selectlbl">Select Courses</label>
-                            <select multiple class="form-control" id="selectlbl">
+                        <div class="input-group mx-2 my-3">
+                            <label>Select Courses</label>
+                            <select multiple class="input-control"  id="courses">
                                 <option value="soft_eng">Software engineering</option>
                                 <option value="java_web">Java web engineering</option>
                                 <option value="builddply">Build and deployment</option>
                                 <option value="intecom">Intercultural communication</option>
                                 <option value="webeng">Web engineering</option>
                               </select>
-                        </div>  
-                        <a class="btn  btn-main my-3"  href="/userValidation/studentdashboard.html">Register Course Modules</a>             
-                    </form>
+                        </div>
+                        <button id="registerCourse" class="btn btn-main my-2" type="submit">Register Course</button>  
+                        <!-- <a class="btn  btn-main my-3"  href="/userValidation/studentdashboard.html">Register Course Modules</a>              -->
                 </div>
         </div>
     </div>
+    <script src="/js/register_course.js"></script>
 </body>
 </html>
