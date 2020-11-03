@@ -44,6 +44,7 @@ function  postSignupData(){
         }
 
         alert('Registered Successfully');
+        window.location.href = "/";
 
         fetch('/signup',options).then(response => {
             console.log(response);
@@ -51,3 +52,4 @@ function  postSignupData(){
     }
 
     document.querySelector('#send_SigupData').addEventListener('click', postSignupData);
+    

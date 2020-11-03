@@ -11,8 +11,41 @@ const Datastore = require('nedb');
 const database = new Datastore('database.db');
 database.loadDatabase();
 
+//find specific user from database
+app.get('/signup', (request, response) =>{
+    console.log("i got a request");
+    console.log(request.body);
+
+    database.find({}, (err, data) =>{
+        if(err){
+            response.end();
+            return;
+        }
+        response.json(data);
+    });
+});
+
 //Insert user signup data into database
 app.post('/signup',async (request,response) =>{
+    console.log("i got a request");
+    console.log(request.body);
+
+    const data = request.body;
+
+        database.insert(data);
+        response.json({
+            firstname: data.fname,
+            lastname : data.lname,
+            datofbirth : data.doblbl,
+            email:      data.emaillbl,
+            username: data.uname,
+            password: hashPassword,
+        });
+    
+
+});
+
+/* app.post('/signup',async (request,response) =>{ supports encryption but a bit messy with decryption
     console.log("i got a request");
     console.log(request.body);
 
@@ -45,4 +78,4 @@ app.post('/signup',async (request,response) =>{
     }catch{
         response.status(500).send();
     }
-});
+}); */
