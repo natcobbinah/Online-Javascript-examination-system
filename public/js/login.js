@@ -1,4 +1,5 @@
 var loginbtn = document.getElementById('loginVerify');
+var studentname = document.getElementById('studentname');
 
 async function getUserCredentialsVerified(){
 
@@ -17,9 +18,10 @@ async function getUserCredentialsVerified(){
            if((username == username_fromdb) && (password == password_frmdb )){
                    alert('Username and password correct');
                    window.location.href = "/userValidation/studentdashboard.html";
+                   studentname.innerHTML = username;
                    break;
            }else{
-               document.getElementById('status').innerHTML="Incorrect username of password";
+               document.getElementById('status').innerHTML="Incorrect username or password";
            }
         }
 }

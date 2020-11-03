@@ -75,3 +75,17 @@ body {
   border-radius: 2rem;
   background-color: white;
 }
+
+.btn-main {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn-main:hover {
+  color: white;
+}
+
+a {
+  color: black;
+}

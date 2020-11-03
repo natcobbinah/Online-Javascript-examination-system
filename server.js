@@ -49,6 +49,21 @@ app.post('/signup',async (request,response) =>{
 
 });
 
+//const data = {fname,lname,doblbl,emaillbl,uname};
+app.post('/editProfile',async(request,response) =>{
+    console.log("i got a request");
+    console.log("request.body");
+
+    const data = request.body;
+    database.update({$set: {fname: data.fname,
+                           lname: data.lname,
+                           doblbl: data.doblbl,
+                           emaillbl: data.emaillbl,
+                           uname: data.uname}},{},function(err,values){
+
+                           });
+});
+
 //Insert student registered course module into database
 app.post('/courses', (request,response) => {
     console.log("I got a request");
